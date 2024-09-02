@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "VLADIMIR";
+  src: url("./../fonts/VLADIMIR.TTF");
+}
+
+body {
+  background-image: url("./../images/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+body > div > div > div.quote_section > div {
+  min-height: 25vh;
+}
+
+.image {
+  width: 250px;
+  transition: 0.5s;
+}
+
+.image:hover {
+  filter: drop-shadow(0px 1px 26px #ffc107);
+  cursor: pointer;
+}
+
+#quote {
+  font-family: "VLADIMIR";
+  font-size: 3rem;
+}
+
+#author,
+.heading {
+  font-family: "Sedan SC", serif;
+}
+
+@media (max-width: 1200px) {
+  #quote {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 512px) {
+  #quote {
+    font-size: 1.5rem;
+  }
+  .image {
+    width: 200px;
+  }
+}
